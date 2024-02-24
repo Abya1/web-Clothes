@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Web Clothes Store</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <!-- nav -->
+        <nav class="nav container">
+            <!-- logo -->
+            <a href="#" class="logo">Ecomerce</a>
+            <!-- cart icons -->
+            <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            <!-- cart -->
+            <div class="cart">
+                <h2 class="cart-title">Your Cart</h2>
+                <!-- content -->
+                <div class="cart-content">
+                    <!-- diisi lewat Javascript -->
+                </div>
+                <!-- total -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- buy buttton -->
+                <button type="button" class="btn-buy">Pay Now</button>
+                <!-- class cart -->
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+        </nav>
+    </header>
+    <!-- Product -->
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+        <!-- shop-content -->
+        <div class="shop-content">
+            <!-- box 1 -->
+            <div class="product-box">
+                <!-- Stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjD5layLwB8i4Pw1cKb3EqVHL8AH7uNzZ2szMpZQBaW5SpCTvz7uDY4VOS1nbp7NcSc9CnyF2XhWSo5DUxzaD9OUxkwuUi1iJw4p6465YfhMHRNzBBs5tT4VB7J4JAld6MRbCt-DdPZ41SPytDhtlfky5ss0CmYVIpwwRMn16ZL75MsptUwAA3UQhbnoXuB/s1600/product1.jpeg" 
+                    alt="" 
+                    class="product-img">
+                <h2 class="product-title">Adicolor Seasonal</h2>
+                <span class="price">$260</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- box 2 -->
+            <div class="product-box">
+                <!-- Stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhexdJ5k_K_O3LJ6ZaR9h1KTamq9ZbAd9z6dziUcskonB1-1KUMng13G-94s_Jg2f1739Q94hEs04YiYfRq5Z-skRbyF8diD1BaFJ2OU-EgCw-dijQpuwwuu4yRyV8BUQiiPcT9jC7eU847PUsgFNsNjMDUOahT-1jSj6LsfHfYg0Tix6yGBOL1LivCjeY4/s1600/product2.jpeg"
+                    alt="" 
+                    class="product-img">
+                <h2 class="product-title">Saturday Backpack</h2>
+                <span class="price">$230</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- box 3 -->
+            <div class="product-box">
+                <!-- Stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEx7fycpXq_LPNY3pZN7ubNvl3ZTM8eO3j_bD9rCOZYH3di4vMxtnSGMpAC-DtWHo8kSSMIw-noXXhkSdqu1QBuWOoFDS1Ayb-4gBiDrkJ7ThCrx_kGou5neeKXoKyXwWPy-ugPd74JOMJbrnRgMQyHvvOTU0Pgu4H5Hxc07W-uzfzE7vTQbp3o4v83SNF/s1600/product3.jpeg"
+                    alt="" 
+                    class="product-img">
+                <h2 class="product-title">Ultimate Hat</h2>
+                <span class="price">$50</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- box 4 -->
+            <div class="product-box">
+                <!-- Stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo4fPxla_z-3UbkVpCF-mFcV-q1FP-F3ZqxOYgEPTxVBt6uwsLs4G81YdMHWtAB6iD44KpfFSA9-rr92hBeybw14C6aht1yFlen4OJd74E5V2zUKSBr-6NqB4iMYcRLWrJQ1shlbFVVoOJztL0JNF7RoTCPenArolx1EzsfGOctLtFlCtmvsluHHE8584q/s1600/product4.jpeg"
+                    alt="" 
+                    class="product-img">
+                <h2 class="product-title">Messi Goat Tee </h2>
+                <span class="price">$170</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- box 5 -->
+            <div class="product-box">
+                <!-- Stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDZ_p5ATG13Cnn24DDBFdEnlBhuqcfjEP8mSEZHSqIS6UkdW-k46sQNG7J_0GFYrya0-KwkoRsbekzYsw4ovzombWnjXgi-PHrTV7Ge2uao_ryyDkfHKum0TjnRujaPoVqHR0MkGmGPELvEtsMesJMmjP01uZKEg5Ky7QfCMVlQb_o3Ymkgn9wTPJpxqsu/s1600/product5.jpeg"
+                    alt="" 
+                    class="product-img">
+                <h2 class="product-title">Adicolor Hoodie</h2>
+                <span class="price">$230</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- box 6 -->
+            <div class="product-box">
+                <!-- Stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEipTCUPBOmcLdLSgJ258bmwLQ_Y5EeCGBEx0uWleLaybDlv-06oGho-rdfB7T0n-zi0fjJpRM6-aHjYE6gL4786HwMupNAusmZyW1aCJgBAdHVRa-DpJDXREVW5wfYqnssSJrq8Ah4gHcj0ejlltvVVdUcjWwY3sZiiw_NAqzdK8RLRPzFtoJQobZkooW7T/s1600/product6.jpeg"
+                    alt="" 
+                    class="product-img">
+                <h2 class="product-title">Adidas AirBuds</h2>
+                <span class="price">$199</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- box 7 -->
+            <div class="product-box">
+                <!-- Stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEik7Rbk8lg_91t0r7fwvGXgMTU071hLkLbOAOxcx4K2HOnZ0QPphs600f7RcLVEj-OxfIGxk8SUqA7gB9QhECEWHhB0fLyuxzS8uw8qP7m5h7_FaieMy0gLbKGocN3Mk-wo2luqQTpUOSbr4NsKpM_WPR2kj6sRrOM6LflToLJv2ATIwpd4-jbXXiW5oUJ0/s1600/product7.jpeg"
+                    alt="" 
+                    class="product-img">
+                <h2 class="product-title">Metal Bottle 1L</h2>
+                <span class="price">$70</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <!-- box 8 -->
+            <div class="product-box">
+                <!-- Stripe need images that are on online on local server it will not show in stripe checkout page we have to upload online -->
+                <img 
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFZt3OraZjwxOKcZeoZOCuscyAJcYzUJy257hWJo3bK-ic3fp5SPBo1GPhzvnsGSxrpsYoWkaNyNUSwfO-7qQ6ARCqS9JUzDYRbsdm-ytxPlxEwcIGztKgXdi0L6hXvTE6BEJbY-tS4BieN5lyLRQWRsN1T1r-G3l7ebm0QEqfYPCcwaIyGif0SsyFvSQS/s1600/product8.jpegs"
+                    alt="" 
+                    class="product-img">
+                <h2 class="product-title">Ultraboost Shoes</h2>
+                <span class="price">$280</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+    </section>
+    
+    <!-- JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>
+
+<!-- 
+    Consolas, 'Courier New', monospace
+ -->
